@@ -1,7 +1,8 @@
 # Azure Functions Custom Handler OpenTelemetry Repro
 This repository contains an extremely simple Azure Function app which leverages the
 ["HTTP-only" custom handler][httponly] model and demonstrates that there is a problem with
-OpenTelemetry trace context propagation in the production Azure Functions runtime.
+OpenTelemetry trace context propagation in the production Azure Functions runtime
+when AppInsights is disabled.
 
 This project is currently deployed at <https://azfncustomhandlerotel.azurewebsites.net/api/hello>
 should you wish to validate the behaviour without deploying your own function.
